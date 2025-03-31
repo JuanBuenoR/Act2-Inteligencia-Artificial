@@ -4,7 +4,7 @@ import networkx as nx
 # Crear el grafo de las estaciones de Transmilenio
 def create_transmilenio_graph():
     G = nx.Graph()
-    # Añadimos las conexiones entre estaciones (origen, destino, estaciones)
+    # Añadimos las conexiones entre estaciones (origen, destino, weight)
     G.add_edge("Portal Norte", "Calle 127", weight=8)
     G.add_edge("Calle 127", "Calle 100", weight=3)
     G.add_edge("Calle 100", "Calle 85", weight=2)
